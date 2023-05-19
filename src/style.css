@@ -1,0 +1,46 @@
+@font-face {
+    font-family: vazir;
+    src: url('../public/assets/fonts/vazir/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+} 
+@font-face {
+    font-family: vazir;
+    src: url('../public/assets/fonts/vazir/Vazirmatn-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,*:after,*:before{
+     box-sizing:border-box;
+}
+body{
+    direction:rtl;
+    margin:0;
+    background-color: #151515;
+    color: #fff;
+    font-family: vazir;
+    font-weight: 400;
+}
+h2,h3{
+    font-family: vazir;
+    font-weight: 900;
+}
+ul,li{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration:none;
+    color: #fff;
+}
+p{
+    margin:0;
+}
+.container{
+    width:1200px;
+    margin:0 auto;
+}
