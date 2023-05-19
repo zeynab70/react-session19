@@ -1,0 +1,179 @@
+
+  @font-face {
+        font-family: vazir;
+        src: url('../fonts/vazir/Vazirmatn-Regular.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+  } 
+  @font-face {
+        font-family: vazir;
+        src: url('../fonts/vazir/Vazirmatn-Black.woff2') format('woff2');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+  }
+  
+  *,*:after,*:before{
+         box-sizing:border-box;
+    }
+    body{
+        direction:rtl;
+        margin:0;
+        background-color: #151515;
+        color: #fff;
+        font-family: vazir;
+        font-weight: 400;
+    }
+    h2,h3{
+        font-family: vazir;
+        font-weight: 900;
+    }
+    ul,li{
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+    a{
+        text-decoration:none;
+        color: #fff;
+    }
+    p{
+        margin:0;
+    }
+    .container{
+        width:1200px;
+        margin:0 auto;
+    }
+    .MostPopulHolder{
+        margin-top: 80px;
+    }
+    .MostPopulHolder .title1{
+        margin-bottom: 40px;
+    }
+    .MostPopulList{
+        display:flex;
+    }
+    .MostPopulList li{
+        width: 16.66%;
+        padding-left: 45px;
+    }
+    .MostPopulList li .imageBox {
+        position: relative;
+    }
+    .MostPopulList li .imageBox img{
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .MostPopulList li .imageBox .imageHover{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        content:"";
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .MostPopulList li .imageBox:hover .imageHover{
+        background: transparent;
+    }
+    .MostPopulList li:nth-child(1) img{
+        transform: scale(1.1);
+        border: 2px solid #fff;
+        border-radius: 8px;
+    }
+    .FilimoBoxHolder{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        border-top: 2px solid #353637;
+        border-bottom: 2px solid #353637;
+        text-align: center;
+    }
+    .FilimoBoxHolder .FilimoBoxTitle{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    .FilimoBoxHolder .FilimoBoxTitle img{
+        width: 70px;
+        height: auto;
+    }
+    .FilimoBoxHolder .description{
+        line-height: 26px;
+        color: #959ba2;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .FilimoBoxHolder .informationLink{
+        color: #f4843f;
+        background: rgba(251,181,60,.06);
+        padding: 7px 20px 7px 20px;
+        border: 1ps solid transparent;
+        border-radius: 20px;
+    }
+    .FilimoBoxHolder .informationLink i{
+        width: 20px;
+        height: 20px;
+    }
+    .FilimoBoxHolder .FilimoBoxList{
+        margin-top: 80px;
+        margin-bottom: 40px;
+        display: flex;
+    }
+    .FilimoBoxHolder .FilimoBoxList li{
+        width:33.33%;
+        padding-left: 35px;
+    }
+    .FilimoBoxHolder .FilimoBoxList .imageBox {
+        position: relative;
+        transition: all 3s;
+    }
+    .FilimoBoxHolder .FilimoBoxList img{
+        width:100%;
+        height: auto;
+        border:6px solid #000;
+    }
+    .FilimoBoxHolder .FilimoBoxList .imageBox .play{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: rgba(0,0,0,.5);
+        padding: 22px;
+        border-radius: 50%;
+    }
+    .FilimoBoxHolder .FilimoBoxList .imageBox .play i{
+        font-size: 16px;
+    }
+    .FilimoBoxHolder .FilimoBoxList .imageBox p{
+        position:absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0,0,0,.5);
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 20px;
+        font-size: 12px; 
+    }
+    .FilimoBoxHolder .FilimoBoxList .imageBox .imageHover{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        content:"";
+        background: rgba(0, 0, 0, 0.2);
+    }
+    .FilimoBoxHolder .FilimoBoxList .imageBox:hover img{
+        transform: scale(1.1);
+    }
+    .FilimoBoxHolder .FilimoBoxList .imageBox:hover .imageHover{
+        transform: scale(1.1);
+    }
+    .FilimoBoxHolder .FilimoBoxList .imageBox:hover .play{
+        background: rgba(102, 100, 100, 0.5);
+    }
